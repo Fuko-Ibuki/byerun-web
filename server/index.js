@@ -73,6 +73,4 @@ app.all('*', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    logger.info(`Server is running on http://localhost:${port}`);
-});
+module.exports = app;
