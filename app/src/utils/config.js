@@ -1,9 +1,11 @@
-﻿const vBaseUrl = import.meta.env.VITE_API_BASE_URL || '';
+﻿const vBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
+const defaultPrefix = import.meta.env.DEV ? '/devproxy' : '/api/proxy';
 
 export const appConfig = {
   appVersion: '1.8.3',
   api: {
-    baseUrl: vBaseUrl || '/devproxy',
+    baseUrl: vBaseUrl ?? defaultPrefix,
     endpoints: {
       login: '/auth/login/password',
       token: '/auth/query/token',
