@@ -1,0 +1,6 @@
+name = "byerun-api-proxy"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+type = "javascript"
+
+# 你可以 later 使用 wrangler publish 来部署
